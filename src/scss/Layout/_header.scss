@@ -1,0 +1,61 @@
+@use 'base/variables' as v;
+@use 'base/mixin' as m;
+
+.header{
+    background-color: v.$verde;
+    color: white;
+
+    @media (min-width: 768px){
+        &.fijo{
+            left: 0;
+            top: 0;
+            position: fixed;
+            width: 100%;
+            box-shadow: .3rem .3rem .3rem #333;
+        }
+    }
+
+    h1{
+        padding-top: 2rem;
+    }
+}
+
+.contenido-header{
+
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include m.phone {
+        display: block;
+        text-align: center;
+    }
+
+    
+}
+
+.navegacion-principal a{
+    margin-right: 2rem;
+
+    &:hover{
+        color: v.$amarillo;
+        transition: .3s ease-in-out;
+    }
+
+    @include m.phone {
+        display: block;  
+        margin-bottom: 1rem;   
+    } 
+    &:last-child{
+        margin: 0;
+    }
+
+}
+
+
+
+
+
+
+

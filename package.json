@@ -1,0 +1,31 @@
+{
+  "name": "festival-de-musica",
+  "version": "1.0.0",
+  "description": "Proyecto con Gulp, SASS y HTML",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "gulp": "gulp tarea",
+    "dev": "gulp dev"
+  },
+  "keywords": [
+    "SASS",
+    "and",
+    "GULP"
+  ],
+  "author": "Winter Morillo",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.12",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser-js": "^5.2.2",
+    "gulp-webp": "^4.0.1",
+    "postcss": "^8.4.14",
+    "sass": "^1.52.1"
+  }
+}

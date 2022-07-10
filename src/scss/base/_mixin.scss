@@ -1,0 +1,9 @@
+@mixin heading{
+    background-color: blue;
+}
+
+@mixin phone{
+    @media (max-width: 480px){
+        @content;
+    }
+}

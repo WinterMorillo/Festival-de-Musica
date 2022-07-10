@@ -1,0 +1,73 @@
+@use 'base/variables' as v;
+
+.lineup{
+    background-color: v.$rosa;
+
+    li{
+        list-style: none;
+        text-align: left;
+        padding: 2rem;
+    }
+}
+
+.lineup h2{
+    color: v.$blanco;
+    font-size: 4rem;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.escenario__fecha{
+    text-align: center;
+    color: v.$blanco;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.escenario__icono{
+    width: 15rem;
+    margin-bottom: 2rem;
+}
+
+.escenario__1, .escenario__4{
+    background-color: v.$amarillo;
+}
+
+.escenario__2, .escenario__3{
+    background-color: v.$verde;
+}
+
+.escenarios{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    padding-bottom: 3rem;
+}
+
+.escenario h3{
+    text-align: center;
+    font-weight: 400;
+}
+
+.escenario{
+    padding: 3rem;
+    text-align: center;
+}
+
+span{
+    font-weight: bold;
+}
+
+
+
+.darker-yellow{
+    background-color: v.$damarillo;
+}
+
+.darker-green{
+    background-color: v.$dverde;
+}
+
+
+

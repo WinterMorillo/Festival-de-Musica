@@ -1,0 +1,60 @@
+@use 'base/variables' as v;
+
+.boletos{
+    background-color: v.$verde;
+    padding-bottom: 4rem;
+
+    h2{
+        text-align: center;
+        color: white;
+        font-weight: 900;
+        padding-top: 4rem;
+    }
+
+    .boletos-pases{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+
+    h3{
+        padding: 1rem;
+        text-align: center;
+        color: white;
+        font-size: 3rem;
+    }
+
+    p{
+        background-color: v.$rosa;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    ul{
+        background-color: v.$blanco;
+        padding-left: 0;
+        margin: 0;
+        
+        li{
+            list-style: none;
+            padding: 1rem;
+            border-bottom: 1px solid lightgray;            
+        }
+    }
+
+    .incluye-titulo{
+        text-align: center;
+        font-weight: 700;
+        color: v.$blanco;
+        text-transform: uppercase;
+    }
+
+    .precio{
+        font-weight: 900;
+        text-align: center;
+        color: v.$blanco;
+        background-color: v.$morado;
+        font-size: 3rem;
+
+    }
+}

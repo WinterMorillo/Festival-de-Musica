@@ -1,0 +1,36 @@
+@use 'base/variables' as v;
+@use 'base/mixin' as m;
+
+
+.festival{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    padding: 5rem;
+    @include m.phone {
+        grid-template-columns: 1fr;
+
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    h2{
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+
+    p{
+        font-size: 2rem;
+        line-height: 1.5;
+        text-align: justify;        
+    }
+
+    .fecha{
+        color: v.$rosa;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+}

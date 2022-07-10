@@ -1,0 +1,40 @@
+@use 'base/variables' as v;
+
+//snippet the box-sizing 
+html{
+    font-size: 62.5%; // esto hara que 1 rem = 10px
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: v.$fuente_principal;
+    font-size: 1.6rem;
+
+    &.fijaroverlay{
+        overflow: hidden;
+    }
+
+    &.body-scroll{
+        padding-top: 8.6rem;
+    }
+}
+
+.contenedor{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: v.$blanco;
+    font-size: 2rem;
+}
+
+h1{
+    margin: 0 0 3rem 0;
+}
